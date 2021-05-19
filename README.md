@@ -9,14 +9,16 @@ For more information please contact ama-marina.kreme@univ-amu.fr/ valentin.emiya
 
 ## Installation
 
-Download the folder *tff2020"*into the directory of your choice. 
-Then within MATLAB go to file >> Set path... and add the directory containing
- "tff2020/matlab" to the list (if it isn't already). 
-
+Download the folder *tff2020*into the directory of your choice. 
+Then within MATLAB go to file :
+```
+>> cd ../tff2020/matlab 
+>> addpath matlab
+```
 
 ## Dependencies
 
-This toolbox requires *The Large Time Frequency Analysis Toolbox (LTFAT)* 
+*tff2020* requires *The Large Time Frequency Analysis Toolbox (LTFAT)* 
 which can be downloaded  at  https://ltfat.github.io   
 
 ## About tff2020
