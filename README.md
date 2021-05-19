@@ -26,29 +26,38 @@ The provided Matlab code contains the directories we describe below:
 * [halko2011](#halko2011): contains the functions that implement the random projection methods.
 * [tfgm](#tfgm): is the main directory of time-frequency fading (TFF). It contains the following subdirectories:
     - datasets: contains the functions which make it possible to load the signals, to form the pairs, to generate the parameters of smoothing for the various masks and to generate the mixtures.
-   - subregions: contains the functions which allow to implement the Algorithm \ref{algo:subregions} page \pageref{algo:subregions}.
-   - tf_fading: contains the various functions which intervene in the Algorithms \ref{algo:tffP} and \ref{algo:tff1}.
+   - subregions: contains the functions which allow to implement the Algorithm 3 of the paper.
+   - tf_fading: contains the various functions which are used in in the Algorithm 1 and 2.
    - tf_tools: contains the functions which generate the parameters of the Gabor transform, those of the signal, and the Gabor multiplier
    - utils : contains all the additional functions necessary for the implementation of our algorithms
-   - scripts: contains the scripts which allow to reproduce all the results ofpaper.
+   - scripts: contains the scripts which allow to reproduce all the results of paper.
+
+To reproduce the figures in paper, simply run the scripts shown below: 
+
+- the Figures \ref{fig:mix-mask} and \ref{fig:mask.generation} : \texttt{tff2020/matlab/tfgm/datasets/test_get\_mix.m}
+- the Figures \ref{fig:mask-multiplier-eigenvalues} and \ref{fig:eigenvectors-illustrations} :\texttt{tff2020/matlab/tfgm/scripts/exp\_gabmul\_eigs\_properties.m}- - Figure \ref:rank-estimation } :\texttt{tff2020/matlab/tfgm/scripts/rank\_estimation\_halko\_vs\_eigs_gausswin.m}
+- the Figure \ref{fig:energy.estimation}: \texttt{tff2020/matlab/tfgm/scripts/script\_energy\_estimation.m}
+- Figure \ref{fig:find.subregions}: \texttt{tff2020/matlab/tfgm/scripts/script\_energy_estimation.m}
+- Figures \ref{fig:find.subregions}, \ref{fig:rec_spectro} and \ref{fig:lambda} : \texttt{tff2020/matlab/tfgm/scripts/exp\_tff1\_car\_bird.m} and 
+ \texttt{tff2020/matlab/tfgm/scripts/exp\_tffP\_car\_bird.m}
+- the Tables \ref{tab:sdr} and \ref{tab:is} : \texttt{tff2020/matlab/tfgm/scripts/exp\_all\_tff1.m} and
+\texttt{tff2020/matlab/tfgm/scripts/exp\_all\_tffP.m} 
 
 
+#Instruction for Python user
 
-We compared GLI, PCI and PLI to a reference method which consists in replacing the missing phases by random phases (RPI).
-Considering the complexity in memory as well as in time, we have 
-- a quick and small demonstration on a synthetic signal where we compare GLI , PCI, PLI and RPI. 
-To reproduce it, you just have to launch the script *exp_audio_phase_inpainting.m*. 
-You can also see the result directly by clicking on the following link http://kreme.perso.math.cnrs.fr/AudiophaseInpainting/index.html
-
-
+The python code is available on the platform \href{https://pypi.org/project/tffpy/}{PyPI}. The installation procedure is described there: 
+The main experiments of paper are available by running the following scripts 
+ 
+ - the Figure \ref{fig:rec_spectro} can be reproduced in Python by executing the specific tasks 12 and 13 of \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
+ - the Figure \ref{fig:lambda} can be reproduced in Python by executing the specific tasks 12 and 13 of \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
+ - the Tables \ref{tab:sdr} and \ref{tab:is} can be reproduced in Python by running the complete experiment of \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
+ and \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
+ - Table II can be reproduced in Python by running the full experiment from tffpy.scripts.script_exp_solve_tff.py.
 
 ## Usage
 
 See the documentation. 
-
-To reproduce the results of the above mentioned paper, simply run the **script_run_all_experiment.m** and **script_plot_all_exp_results.m**
-file located in your current directory. 
-
 
 
 ## Copyright © 2020-2021
