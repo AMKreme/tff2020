@@ -23,8 +23,8 @@ which can be downloaded  at  https://ltfat.github.io
 The audio signals are available in the **data** folder.
 
 The provided Matlab code contains the directories we describe below: 
-* [halko2011](# halko2011) : contains the functions that implement the random projection methods.
-* [tfgm](# tfgm) : is the main directory of time-frequency fading (TFF). It contains the following subdirectories:
+* halko2011 : contains the functions that implement the random projection methods.
+* tfgm : is the main directory of time-frequency fading (TFF). It contains the following subdirectories:
    - datasets : contains the functions which make it possible to load the signals, to form the pairs, to generate the parameters of smoothing for the various masks and to generate the mixtures.
  \item \texttt{subregions} : contains the functions which allow to implement the Algorithm \ref{algo:subregions} page \pageref{algo:subregions}.
  \item \texttt{tf\_fading} : contains the various functions which intervene in the Algorithms \ref{algo:tffP} and \ref{algo:tff1}.
