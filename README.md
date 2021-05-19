@@ -1,0 +1,67 @@
+# tff2020
+*tff2020* is a toolkit available in both Matlab and python languages for time-frequency fading using Gabor multipliers based on the work in paper
+**Time-frequency fading algorithms based on Gabor multipliers**
+by A. Marina Krémé, Valentin Emiya, Caroline Chaux and Bruno Torré́sani, 2020.
+
+For more information please contact ama-marina.kreme@univ-amu.fr/valentin.emiya@lis-lab.fr
+
+#Instruction for Matlab user
+
+## Installation
+
+Download the folder "tff2020" into the directory of your choice. 
+Then within MATLAB go to file >> Set path... and add the directory containing
+ "tff2020/matlab" to the list (if it isn't already). 
+
+
+## Dependencies
+
+This toolbox requires *The Large Time Frequency Analysis Toolbox (LTFAT)* 
+which can be downloaded  at  https://ltfat.github.io   
+
+## About $\texttt{tff2020}$
+The audio signals are available in the \texttt{data} folder.
+
+The provided Matlab code contains the directories we describe below: 
+- $\texttt{halko2011}$ : contains the functions that implement the random projection methods.
+- performances : contains the functions that are used in this thesis to estimate the reconstruction error of our algorithms
+- utils : contains all the annex functions necessary to the implementation of our algorithms
+- problem_generation : contains the creation of the synthetic signal which was used in our experiments
+- experiments_scripts : contains the scripts allowing to perform all the experiments described for each algorithm
+- results_scripts : contains the scripts to collect and display the results of all the experiments described for each algorithm
+- script_run_all_experiment.m: runs all experiments
+- *script_plot_all_exp_results.m*: displays the results of all experiments
+
+
+
+We compared GLI, PCI and PLI to a reference method which consists in replacing the missing phases by random phases (RPI).
+Considering the complexity in memory as well as in time, we have 
+- a quick and small demonstration on a synthetic signal where we compare GLI , PCI, PLI and RPI. 
+To reproduce it, you just have to launch the script *exp_audio_phase_inpainting.m*. 
+You can also see the result directly by clicking on the following link http://kreme.perso.math.cnrs.fr/AudiophaseInpainting/index.html
+
+
+
+## Usage
+
+See the documentation. 
+
+To reproduce the results of the above mentioned paper, simply run the **script_run_all_experiment.m** and **script_plot_all_exp_results.m**
+file located in your current directory. 
+
+
+
+## Copyright © 2020-2021
+
+- [Laboratoire d'Informatique et Systèmes](https://www.lis-lab.fr) 
+- [Institut de Mathématiques de Marseille](https://www.i2m.univ-amu.fr)
+- [Université d'Aix-Marseille](https://www.univ-amu.fr)
+
+
+## Contributors
+
+- [A. Marina Krémé](ama-marina.kreme@univ-amu.fr)
+- [Valentin Emiya](valentin.emiya@lis-lab.fr)
+
+
+
