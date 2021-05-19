@@ -36,24 +36,45 @@ To reproduce the figures in paper, simply run the scripts shown below:
 
 - Figure 1 can be reproduced by executing *tff2020/matlab/tfgm/datasets/test_get_mix.m*
 - Figures 1 and 2  can be reproduced by executing *tff2020/matlab/tfgm/scripts/exp\_gabmul\_eigs\_properties.m*
-- Figure \ref:rank-estimation } :\texttt{tff2020/matlab/tfgm/scripts/rank\_estimation\_halko\_vs\_eigs_gausswin.m}
-- the Figure 3  can be reproduced by executing *tff2020/matlab/tfgm/scripts/script\_energy\_estimation.m*
-- Figure \ref{fig:find.subregions}: \texttt{tff2020/matlab/tfgm/scripts/script\_energy_estimation.m}
+- Figure 3 can be reproduced by excecuting \texttt{tff2020/matlab/tfgm/scripts/rank\_estimation\_halko\_vs\_eigs_gausswin.m}
 - Figures 4 and 5  can be reproduced by executing *tff2020/matlab/tfgm/scripts/exp\_tff1\_car\_bird.m* and 
  *tff2020/matlab/tfgm/scripts/exp\_tffP\_car\_bird.m*
-- Tables I and II can be reproduced by running the full experiment from *tff2020/matlab/tfgm/scripts/exp\_all\_tff1.m* and
+- Tables I and II can be reproduced by running the full experiment from *tff2020/matlab/tfgm/scripts/exp_all_tff1.m* and
 *tff2020/matlab/tfgm/scripts/exp\_all\_tffP.m*
 
 
 #Instruction for Python user
 
-The python code is available on the platform \href{https://pypi.org/project/tffpy/}{PyPI}. The installation procedure is described there: 
+The python code is available on the platform \href{https://pypi.org/project/tffpy/}{PyPI}. 
+
+## Setup
+
+To run it, install it locally as follow. First make sure you have Python >=3.6 
+tffpy requires the following packages, 
+
+ - python >= 3.6
+ - numpy >= 1.13
+ - scipy
+ - matplotlib
+ - pandas
+ - xarray
+ - ltfatpy
+ - skpomade
+ - yafe
+ - madarrays
+which will be automatically installed with tffpy using pip:
+
+```
+$ cd ../your directory
+$ pip install tffpy
+```
+
 The main experiments of paper are available by running the following scripts 
  
- - the Figure \ref{fig:rec_spectro} can be reproduced in Python by executing the specific tasks 12 and 13 of \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
- - the Figure \ref{fig:lambda} can be reproduced in Python by executing the specific tasks 12 and 13 of \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
- - the Tables \ref{tab:sdr} and \ref{tab:is} can be reproduced in Python by running the complete experiment of \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
- and \texttt{tffpy.scripts.script\_exp\_solve\_tff.py}
+ - Figure 4 can be reproduced in Python by executing the specific tasks 12 and 13 of *tffpy.scripts.script_exp_solve_tff.py*
+ - Figure 5 can be reproduced in Python by executing the specific tasks 12 and 13 of *tffpy.scripts.script_exp_solve_tff.py*
+ - Tables I and II can be reproduced in Python by running the complete experiment of *tffpy.scripts.script_exp_solve_tff.py*
+ and *tffpy.scripts.script\_exp\_solve\_tff.py*
  - Table II can be reproduced in Python by running the full experiment from tffpy.scripts.script_exp_solve_tff.py.
 
 ## Usage
