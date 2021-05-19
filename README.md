@@ -1,7 +1,7 @@
 # tff2020
 *tff2020* is a toolkit available in both Matlab and python languages for time-frequency fading using Gabor multipliers based on the work in paper
 **Time-frequency fading algorithms based on Gabor multipliers**
-by A. Marina Krémé, Valentin Emiya, Caroline Chaux and Bruno Torré́sani, 2020.
+by A. Marina Krémé, Valentin Emiya, Caroline Chaux and Bruno Torrésani, 2020.
 
 For more information please contact ama-marina.kreme@univ-amu.fr/valentin.emiya@lis-lab.fr
 
@@ -34,14 +34,15 @@ The provided Matlab code contains the directories we describe below:
 
 To reproduce the figures in paper, simply run the scripts shown below: 
 
-- the Figures \ref{fig:mix-mask} and \ref{fig:mask.generation} : \texttt{tff2020/matlab/tfgm/datasets/test_get\_mix.m}
-- the Figures \ref{fig:mask-multiplier-eigenvalues} and \ref{fig:eigenvectors-illustrations} :\texttt{tff2020/matlab/tfgm/scripts/exp\_gabmul\_eigs\_properties.m}- - Figure \ref:rank-estimation } :\texttt{tff2020/matlab/tfgm/scripts/rank\_estimation\_halko\_vs\_eigs_gausswin.m}
-- the Figure \ref{fig:energy.estimation}: \texttt{tff2020/matlab/tfgm/scripts/script\_energy\_estimation.m}
+- Figure 1 can be reproduced by executing *tff2020/matlab/tfgm/datasets/test_get_mix.m*
+- Figures 1 and 2  can be reproduced by executing *tff2020/matlab/tfgm/scripts/exp\_gabmul\_eigs\_properties.m*
+- Figure \ref:rank-estimation } :\texttt{tff2020/matlab/tfgm/scripts/rank\_estimation\_halko\_vs\_eigs_gausswin.m}
+- the Figure 3  can be reproduced by executing *tff2020/matlab/tfgm/scripts/script\_energy\_estimation.m*
 - Figure \ref{fig:find.subregions}: \texttt{tff2020/matlab/tfgm/scripts/script\_energy_estimation.m}
-- Figures \ref{fig:find.subregions}, \ref{fig:rec_spectro} and \ref{fig:lambda} : \texttt{tff2020/matlab/tfgm/scripts/exp\_tff1\_car\_bird.m} and 
- \texttt{tff2020/matlab/tfgm/scripts/exp\_tffP\_car\_bird.m}
-- the Tables \ref{tab:sdr} and \ref{tab:is} : \texttt{tff2020/matlab/tfgm/scripts/exp\_all\_tff1.m} and
-\texttt{tff2020/matlab/tfgm/scripts/exp\_all\_tffP.m} 
+- Figures 4 and 5  can be reproduced by executing *tff2020/matlab/tfgm/scripts/exp\_tff1\_car\_bird.m* and 
+ *tff2020/matlab/tfgm/scripts/exp\_tffP\_car\_bird.m*
+- Tables I and II can be reproduced by running the full experiment from *tff2020/matlab/tfgm/scripts/exp\_all\_tff1.m* and
+*tff2020/matlab/tfgm/scripts/exp\_all\_tffP.m*
 
 
 #Instruction for Python user
