@@ -19,18 +19,20 @@ Then within MATLAB go to file >> Set path... and add the directory containing
 This toolbox requires *The Large Time Frequency Analysis Toolbox (LTFAT)* 
 which can be downloaded  at  https://ltfat.github.io   
 
-## About $\texttt{tff2020}$
-The audio signals are available in the \texttt{data} folder.
+## About tff2020
+The audio signals are available in the **data** folder.
 
 The provided Matlab code contains the directories we describe below: 
-- $\texttt{halko2011}$ : contains the functions that implement the random projection methods.
-- performances : contains the functions that are used in this thesis to estimate the reconstruction error of our algorithms
-- utils : contains all the annex functions necessary to the implementation of our algorithms
-- problem_generation : contains the creation of the synthetic signal which was used in our experiments
-- experiments_scripts : contains the scripts allowing to perform all the experiments described for each algorithm
-- results_scripts : contains the scripts to collect and display the results of all the experiments described for each algorithm
-- script_run_all_experiment.m: runs all experiments
-- *script_plot_all_exp_results.m*: displays the results of all experiments
+* [halko2011](# halko2011) : contains the functions that implement the random projection methods.
+* [tfgm](# tfgm) : is the main directory of time-frequency fading (TFF). It contains the following subdirectories:
+   - datasets : contains the functions which make it possible to load the signals, to form the pairs, to generate the parameters of smoothing for the various masks and to generate the mixtures.
+ \item \texttt{subregions} : contains the functions which allow to implement the Algorithm \ref{algo:subregions} page \pageref{algo:subregions}.
+ \item \texttt{tf\_fading} : contains the various functions which intervene in the Algorithms \ref{algo:tffP} and \ref{algo:tff1}.
+ \item \texttt{tf\_tools} : contains the functions which generate the parameters of the Gabor transform, those of the signal, and the Gabor multiplier
+ \item \texttt{utils} : contains all the additional functions necessary for the implementation of our algorithms
+  \item \texttt{scripts} : contains the scripts which allow to reproduce all the results of chapter 5.
+
+Translated with www.DeepL.com/Translator (free version)
 
 
 
