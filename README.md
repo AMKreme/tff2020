@@ -3,13 +3,13 @@
 **Time-frequency fading algorithms based on Gabor multipliers**
 by A. Marina Krémé, Valentin Emiya, Caroline Chaux and Bruno Torrésani, 2020.
 
-For more information please contact ama-marina.kreme@univ-amu.fr/valentin.emiya@lis-lab.fr
+For more information please contact ama-marina.kreme@univ-amu.fr/ valentin.emiya@lis-lab.fr
 
 #Instruction for Matlab user
 
 ## Installation
 
-Download the folder "tff2020" into the directory of your choice. 
+Download the folder *tff2020"*into the directory of your choice. 
 Then within MATLAB go to file >> Set path... and add the directory containing
  "tff2020/matlab" to the list (if it isn't already). 
 
